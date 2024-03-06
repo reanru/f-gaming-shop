@@ -16,24 +16,24 @@ export default function Index(props) {
         console.log('check scroll ', scrollTop);
 
         if(scrollTop >= 160){
-            header.classList.add('bg-blue-600', 'fixed', 'top-6', 'shadow-md');
-            header.classList.remove('absolute', 'bg-transparent');
+            header.classList.add('bg-blue-600', 'fixed', 'top-4', 'shadow-md');
+            header.classList.remove('absolute', 'bg-transparent', 'h-32');
 
             setTimeout(() => {
-                header.classList.add('top-0');
-                header.classList.remove('top-10');
+                header.classList.remove('top-4');
+                header.classList.add('top-0', 'h-20');
             }, 0);
         }else{
-            header.classList.add('absolute', 'bg-transparent');
-            header.classList.remove('bg-blue-600', 'fixed', 'top-0', 'shadow-md');
+            header.classList.remove('bg-blue-600', 'fixed', 'top-0', 'h-20', 'shadow-md');
+            header.classList.add('absolute', 'bg-transparent', 'h-32');
         }
     };
     
     return (
         <div className="relative">
             
-            <header className="header w-full rounded-b-3xl z-50 fixed top-0 transition-all duration-500">
-                <nav className="container mx-auto flex items-center justify-between text-white h-24 w-10/12 lg:w-11/12 xl:w-10/12 whitespace-nowrap">
+            <header className="header w-full rounded-b-3xl z-50 fixed top-0 transition-all duration-500 ease-in-out h-32 flex">
+                <nav className="container mx-auto flex items-center justify-between text-white w-10/12 lg:w-11/12 xl:w-10/12 whitespace-nowrap">
                     <div className="text-lg lg:text-3xl font-semibold">GAMING SHOP</div>
                     <ul className="lg:flex items-center space-x-4 hidden">
                         <li className="py-2 px-4 hover:bg-blue-500 rounded-full">Home</li>
