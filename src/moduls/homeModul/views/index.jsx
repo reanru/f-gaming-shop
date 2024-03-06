@@ -11,7 +11,7 @@ export default function Index() {
     return (
         <div>
             <section className="img-banner-section relative h-[85rem] md:h-[100rem] lg:h-[54rem] flex items-center justify-center">
-                <div className="container mx-auto px-10 md:mt-10 lg:flex lg:space-x-4 space-y-12 lg:space-y-0 text-white">
+                <div className="container mx-auto w-10/12 lg:w-11/12 xl:w-10/12 md:mt-10 lg:flex lg:space-x-4 space-y-12 lg:space-y-0 text-white">
                     <div className="w-full flex flex-col justify-center text-center lg:text-left space-y-16">
                         <div>
                             <h6 className="text-xl">WELCOME TO GAMING SHOP</h6>

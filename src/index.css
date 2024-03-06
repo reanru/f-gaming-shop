@@ -38,6 +38,8 @@
     width: 100%;
     border-bottom-left-radius: 150px;
     border-bottom-right-radius: 150px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
     background-size: cover;
     background-image: url('./assets/image/banner-bg.jpg'); /* Ganti dengan path gambar Anda */
 }
