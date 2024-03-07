@@ -48,7 +48,17 @@
     background-image: url('./assets/image/banner-image.jpg'); /* Ganti dengan path gambar Anda */
 }
 
-.top-games-section {
-    border-radius: 150px;
-}
+.item  {
+    background-color: #eeeeee;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-bottom: 30px;
+  }
+  
+    .thumb {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+  }
   

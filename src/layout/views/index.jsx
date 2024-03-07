@@ -16,15 +16,10 @@ export default function Index(props) {
         console.log('check scroll ', scrollTop);
 
         if(scrollTop >= 160){
-            header.classList.add('bg-blue-600', 'fixed', 'top-4', 'shadow-md');
+            header.classList.add('bg-blue-600', 'fixed', 'h-20', 'shadow-md');
             header.classList.remove('absolute', 'bg-transparent', 'h-32');
-
-            setTimeout(() => {
-                header.classList.remove('top-4');
-                header.classList.add('top-0', 'h-20');
-            }, 0);
         }else{
-            header.classList.remove('bg-blue-600', 'fixed', 'top-0', 'h-20', 'shadow-md');
+            header.classList.remove('bg-blue-600', 'fixed', 'h-20', 'shadow-md');
             header.classList.add('absolute', 'bg-transparent', 'h-32');
         }
     };
@@ -32,6 +27,19 @@ export default function Index(props) {
     return (
         <div className="relative">
             
+            {/* SHOW CURRENT RESOLUTION */}
+            <div className="fixed top-1/2 flex w-full justify-center items-center z-[999]">
+                <div className="bg-yellow-200 px-4 py-2 border border-yellow-500 font-semibold rounded-xl">
+                    <span>SCREEN : </span>
+                    <span className="sm:hidden text-red-500">XS</span>
+                    <span className="hidden sm:inline-block md:hidden text-red-500">SM</span>
+                    <span className="hidden md:inline-block lg:hidden text-red-500">MD</span>
+                    <span className="hidden lg:inline-block xl:hidden text-red-500">LG</span>
+                    <span className="hidden xl:inline-block 2xl:hidden text-red-500">XL</span>
+                    <div className="hidden 2xl:inline-block text-red-500">2XL</div>
+                </div>
+            </div>
+
             <header className="header w-full rounded-b-3xl z-50 fixed top-0 transition-all duration-500 ease-in-out h-32 flex">
                 <nav className="container mx-auto flex items-center justify-between text-white w-10/12 lg:w-11/12 xl:w-10/12 whitespace-nowrap">
                     <div className="text-lg lg:text-3xl font-semibold">GAMING SHOP</div>
@@ -50,8 +58,8 @@ export default function Index(props) {
                 {props.children}
             </main>
 
-            <footer className="img-bg-footer mt-20 flex justify-center items-center text-center text-white font-semibold bg-blue-500 h-36 w-full rounded-t-full">
-                Copyright © { new Date().getFullYear() }
+            <footer className="img-bg-footer mt-20 flex justify-center items-center space-x-1 text-center text-white font-medium bg-blue-500 h-36 w-full rounded-t-full">
+                <span>Copyright © { new Date().getFullYear() }.</span><a href="https://templatemo.com/" target="blank">Desgin : TemplateMo</a>
             </footer>
         </div>
     )

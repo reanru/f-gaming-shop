@@ -260,6 +260,35 @@ export default function Index() {
                 </div>
             </section>
 
+            <section className="container relative mx-auto mt-28 w-10/12 lg:w-11/12 xl:w-10/12">
+                <div className="absolute bg-[url('./assets/image/cta-bg.jpg')] mx-auto inset-0 w-[34rem] h-[31rem] rounded-3xl -z-10 hidden lg:block"></div>
+
+                <div className="lg:flex items-end justify-around lg:mt-20 space-y-8 lg:space-y-0">
+                    <div className="bg-gray-100 p-10 lg:p-20 rounded-3xl w-full lg:w-[26rem] xl:w-[30rem]">
+                        <h5 className="uppercase font-bold text-red-500">Our Shop</h5>
+                        <h1 className="text-4xl font-bold mt-5">Go Pre-Order Buy & Get Best <span className="text-blue-500">Prices</span> For You!</h1>
+
+                        <div className="mt-14 space-y-10">
+                            <p className="font-bold text-gray-600">Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
+
+                            <button className="-mb-5 bg-red-500 hover:bg-blue-500 py-2 px-4 rounded-full whitespace-nowrap uppercase font-bold text-white transition-all duration-300">View All</button>
+                        </div>
+                    </div>
+
+                    <div className="bg-gray-100 p-10 lg:p-20 rounded-3xl w-full lg:w-[26rem] xl:w-[30rem]">
+                        <h5 className="uppercase font-bold text-red-500">Newsletter</h5>
+                        <h1 className="text-4xl font-bold mt-5">Get Up To $100 Off Just Buy <span className="text-blue-500">Subscribe</span> Newsletter!</h1>
+
+                        <div className="mt-14 space-y-10">
+                            <div className="relative flex justify-between bg-white w-full rounded-full">
+                                <input type="text" value={search} onChange={(e)=>setSearch(e.target.value)} className="outline-none text-gray-500 rounded-full px-6 w-full" placeholder="Your email..." />
+                                <button className="bg-red-500 py-3 px-6 rounded-full whitespace-nowrap uppercase text-white">Search Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
     )
 }
