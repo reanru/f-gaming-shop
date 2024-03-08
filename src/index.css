@@ -48,17 +48,11 @@
     background-image: url('./assets/image/banner-image.jpg'); /* Ganti dengan path gambar Anda */
 }
 
-.item  {
-    background-color: #eeeeee;
-    position: relative;
-    overflow: hidden;
-    border-radius: 25px;
-    margin-bottom: 30px;
-  }
-  
-    .thumb {
-    position: relative;
-    border-radius: 25px;
-    overflow: hidden;
-  }
-  
+.img-page-heading {
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./assets/image/page-heading-bg.jpg'); /* Ganti dengan path gambar Anda */
+}
