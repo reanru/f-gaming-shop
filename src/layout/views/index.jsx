@@ -33,7 +33,7 @@ export default function Index(props) {
         <div className="relative">
             
             {/* SHOW CURRENT RESOLUTION */}
-            <div className="fixed top-1/2 flex w-full justify-center items-center z-[999]">
+            {/* <div className="fixed top-1/2 flex w-full justify-center items-center z-[999]">
                 <div className="bg-yellow-200 px-4 py-2 border border-yellow-500 font-semibold rounded-xl">
                     <span>SCREEN : </span>
                     <span className="sm:hidden text-red-500">XS</span>
@@ -43,7 +43,7 @@ export default function Index(props) {
                     <span className="hidden xl:inline-block 2xl:hidden text-red-500">XL</span>
                     <div className="hidden 2xl:inline-block text-red-500">2XL</div>
                 </div>
-            </div>
+            </div> */}
 
             <header className="header w-full rounded-b-3xl z-50 fixed top-0 transition-all duration-500 ease-in-out h-32 flex">
                 <nav className="container mx-auto flex items-center justify-between text-white w-10/12 lg:w-11/12 xl:w-10/12 whitespace-nowrap">
